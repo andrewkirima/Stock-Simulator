@@ -3,7 +3,8 @@ import './Signup.css';
 import { Link } from 'react-router-dom';
 import stalkLogo from './stalkLogo.png';
 import Logo from '../Logo/logo'
-const url = 'http://localhost:8080/users/add'  //change this to new REST endpoint
+
+const url = 'http://localhost:8080'  //change this to new REST endpoint
 
 class Signup extends Component { // Class -> Stateful Component
     constructor(){
@@ -29,7 +30,7 @@ class Signup extends Component { // Class -> Stateful Component
         console.log(this.state);
         const requestOptions = {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'mode': 'no-cors' },
+          headers: { 'Content-Type': 'application/json'},
           body: JSON.stringify(this.state)
       };
 
@@ -53,14 +54,6 @@ class Signup extends Component { // Class -> Stateful Component
     };
     render() {
         const {firstName, lastName, email, password, password2} = this.state;
-        // if(this.state.signedUp){
-        //     return (
-        //       <div className= "afterSignup">
-        //           <h4>Hello {this.state.firstName} Your User ID is {this.state.newUserID}</h4>
-        //           <h4><Link to="/">Click here to login</Link></h4>
-        //       </div>
-        //     )
-        // }
         if(!this.state.signedUp) {
           return (
               <div className="hello">

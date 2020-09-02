@@ -1,0 +1,39 @@
+{
+  "stocks":[
+      {
+          "id":1,
+          "name":"Apple",
+          "price": "20 per share"
+      },
+      {
+        "id":2,
+        "name":"Google",
+        "price": "100 per share"
+      },
+      {
+          "id":3,
+          "name":"Oracle",
+          "price": "20 per share"
+      },
+      {
+          "id":4,
+          "name":"Netflix",
+          "price": "50 per share"
+      },
+      {
+          "id":5,
+          "name":"Macy's",
+          "price": "40 per share"
+      },
+      {
+          "id":6,
+          "name":"Samsung",
+          "price": "90 per share"
+      },
+      {
+          "id":7,
+          "name":"Amazon",
+          "price": "1000 per share"
+      }
+  ]
+}

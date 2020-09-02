@@ -11,6 +11,7 @@ class Money extends React.Component {
                     <h3>Wallet</h3>
                     <h4>{initialMoney}$</h4>
                 </div>
+                <hr/>
                 <div>
                     <h3>Earned Today</h3>
                     <h4>{earnedToday}$</h4>

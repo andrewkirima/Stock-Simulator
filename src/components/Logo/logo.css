@@ -1,7 +1,7 @@
 .logo {
-    position: fixed;
+    /* background-color: rgb(0, 171, 68); */
+    position: fixed; 
     height: 100%;
     width: 50%;
-    margin-top: 0px;
   }
   

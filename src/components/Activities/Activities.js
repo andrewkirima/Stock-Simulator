@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import StopWatch from '../StopWatch/StopWatch';
+// import Clock from 'react-digital-clock';
 import stalkLogo from '../../assets/stalkLogo.png'
+import './Activities.css'
 class Activities extends React.Component {
     constructor() {
         super();
@@ -13,15 +15,18 @@ class Activities extends React.Component {
         return (
             <Container>
                 <Row>
-                    <Col style={{padding: '50px'}}>
-                        <h1>STALK</h1>
+                    <Col style={{paddingLeft: '50px', paddingBottom: '30px'}}>
+                        <h1 className="stalk">STALK</h1>
+                        {/* <div className="clock">
+                        <Clock />
+                        </div> */}
                     </Col>
                     {/* <Col>
                         <p>{this.state.currentDate}</p>
                     </Col> */}
                     <Col style={{paddingLeft: '50px'}}>
                         <img class="App-logo" src={stalkLogo} />
-                        <p style={{paddingTop: '10px'}}>Good Day, John</p>
+                        <p className="row1">Good Day, John</p>
                         <StopWatch start={Date.now()}/>
                     </Col>
                 </Row>

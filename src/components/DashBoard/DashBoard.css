@@ -5,7 +5,7 @@
 .over {
     width: 100%;
     height: 100vh;
-    background-color:white;
+    background-color: #3b3b3b;
     margin-top: 0%;
 }
 .one {
@@ -26,6 +26,7 @@
     background-color: #1D1D1D;
     font-family: Verdana;
     color: white;
+    border-radius: 15px 50px;
 }
 
 .three {
@@ -36,4 +37,12 @@
     background-color: #3b3b3b;
     font-family: Verdana;
     color: white;
+}
+
+.rowCard {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    
 }

@@ -5,7 +5,7 @@ import './Login.css';
 import stalkLogo from './stalkLogo.png'
 import Logo from '../Logo/logo'
 
-const url = 'http://localhost:8080/login/validate'  //change this to new REST endpoint
+const url = 'http://localhost:8080'  //change this to new REST endpoint
 
 class Login extends Component { // Class -> Stateful Component
     constructor(props){
@@ -68,16 +68,18 @@ class Login extends Component { // Class -> Stateful Component
                 </form>
             </div>
             <div className="haveanaccount">
-                        <h5>Don't have an account? <Link className='linkto' to='./signup'>Signup here!</Link></h5>
+                    <h5>Don't have an account? <Link className='linkto' to='./signup'>Signup here!</Link></h5>
             </div>
             </div>
-           
             </div>
             )
         }
         if(found == 2) {
             return (
                 <div className='notValidCreds'> 
+                 <div className="logo">
+                  <Logo />
+                 </div>
                 <div className="imgLogo">
                 <img className='img' src={stalkLogo} alt="Stalk Logo" />
                 </div>                    

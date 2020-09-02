@@ -26,14 +26,9 @@ class DashBoard extends React.Component {
                          <Col >
                             <UserProfile />
                         </Col>
-
                        </div>
-                        
                     </Row>
-                
-            
             </div>
-            
         )
     }
 }

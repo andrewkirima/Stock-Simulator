@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
-import DashBoard from './components/DashBoard/DashBoard'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
-//import './App.css';
+import DashBoard from './components/DashBoard/DashBoard';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Notfound from './Notfound';
+import './App.css';
 
 class App extends Component { 
   constructor() {
@@ -13,7 +13,6 @@ class App extends Component {
       isLoggedIn: false
     }
     this.handleLogin = this.handleLogin.bind(this);
-    this.handleLogout = this.handleLogout.bind(this); 
   }
   handleLogin() {
     console.log("in handle login:  ")
@@ -22,36 +21,27 @@ class App extends Component {
     });
   }
 
-  handleLogout() {
-    console.log("in logout");
-    this.setState({
-
-      isLoggedIn: false
-    });
-  }
- 
   render() {
   return (
     <Router>  
-    <div className="App">
-      <Route
-              exact
-              path={"/"}
-              render={props => (
-                <Login
-                  {...props}
-                  isLoggedIn={this.state.isLoggedIn}
-                  handleLogin={this.handleLogin}
-                  handleLogout={this.handleLogout}
-                />
-              )}
-       />
-      <Route path="/signup" exact component={Signup} />
+    <Switch>
+      <Route exact path={"/"}
+            render={props => (
+              <Login
+                {...props}
+                isLoggedIn={this.state.isLoggedIn}
+                handleLogin={this.handleLogin}
+              />
+            )}
+      />
+      <Route exact path="/signup" component={Signup} />
       {/* {this.state.isLoggedIn &&  */}
-       <Route path="/dashboard" exact component={DashBoard} />
+      <Route exact path="/dashboard" component={DashBoard} />
       {/* } */}
-    </div>
+      <Route component={Notfound}/>
+    </Switch>
   </Router>
+ 
   );
   }
 }

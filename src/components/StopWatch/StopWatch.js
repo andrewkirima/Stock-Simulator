@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import './StopWatch.css';
+
 export default class StopWatch extends Component {
   constructor(props){
     super(props);
@@ -17,8 +19,8 @@ export default class StopWatch extends Component {
     var clock = Math.round(this.state.clock/1000);
     return(
       <div>
-        <p>you have been here for</p><br/>
-        <span>{clock}  Seconds</span>
+        <p className='hereSince'>you have been here for</p><br/>
+        <span className='seconds'>{clock}  Seconds</span>
         {/* <p>{this.props.start}</p> */}
       </div>
     );
