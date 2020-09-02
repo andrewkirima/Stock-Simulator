@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6aef40bf-204a-40ec-be1f-5c36eca91312" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_simulator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock_simulator/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_simulator_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock_simulator_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_simulator_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock_simulator_app/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_simulator_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock_simulator_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

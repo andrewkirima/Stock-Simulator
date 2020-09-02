@@ -46,7 +46,7 @@ class UserLogoutSerializer(serializers.ModelSerializer):
         return data
 
     class Meta:
-        model = User
+        model = UserProfile
         fields = (
             'status',
         )

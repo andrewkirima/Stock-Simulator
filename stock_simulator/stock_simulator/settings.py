@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'stock_simulator_app.apps.StockSimulatorAppConfig',
     'rest_framework',
     'frontend',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
