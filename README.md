@@ -14,4 +14,6 @@
 
 ### `pip install -r requirements.txt` in `Stock-Simulator\StalkSimulator`
 
-### `python manage.py runserver` in `Stock-Simulator\StalkSimulator\Stalk`
+### `python manage.py migrate` in `Stock-Simulator\StalkSimulator\stalk
+
+### `python manage.py runserver` in `Stock-Simulator\StalkSimulator\stalk`
