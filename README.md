@@ -3,6 +3,8 @@
 
 ### ----------Running Frontend----------
 
+### install Node.js right here: https://nodejs.org/en/
+
 ### `npm install` in `Stock-Simulator\StalkSimulatorFrontend`
 
 ### `npm start` in `Stock-Simulator\StalkSimulatorFrontend`
